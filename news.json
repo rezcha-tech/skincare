@@ -1,0 +1,52 @@
+[
+  {
+    "id": "news-1",
+    "brand": "GENTLY Baby",
+    "judul": "Luncurkan 'Cera-Care Biome Technology' di acara besar Jakarta",
+    "tanggal": "25 Juli 2026",
+    "ringkasan": "GENTLY Baby memperkenalkan teknologi baru yang menggabungkan 5x Ceramide untuk memperkuat skin barrier, Colloidal Oatmeal Extract untuk menenangkan kulit iritasi, dan Lactobacillus Ferment Lysate untuk menjaga mikrobioma kulit bayi. Diluncurkan dalam acara dengan 200+ tamu undangan komunitas GENTLY Baby.",
+    "kandungan": ["5x Ceramide", "Colloidal Oatmeal Extract", "Lactobacillus Ferment Lysate"],
+    "alasanViral": "Momentum PR besar (event offline) + endorsement selebriti Alyssa Daguisè yang menekankan 'formula lengkap dan manfaat terbukti klinis' — menyasar ibu-ibu yang mulai skeptis pada klaim 'viral' semata",
+    "sumber": "Kompas.tv Advertorial"
+  },
+  {
+    "id": "news-2",
+    "brand": "Purela",
+    "judul": "Live selling 'ambyar harga' bareng Ria Ricis saat new launching",
+    "tanggal": "9 Februari 2026",
+    "ringkasan": "Purela mengadakan live TikTok bersama selebriti Ria Ricis untuk merayakan peluncuran produk baru dengan promo harga besar-besaran yang diumumkan lewat teaser beberapa hari sebelumnya.",
+    "kandungan": ["Soothing/calming complex (formula newborn-friendly)"],
+    "alasanViral": "Kombinasi FOMO (promo terbatas), selebriti populer di kalangan ibu muda, dan teaser berulang sebelum hari-H membuat video teaser mendapat ratusan ribu likes",
+    "sumber": "TikTok @purela.id"
+  },
+  {
+    "id": "news-3",
+    "brand": "Loluna",
+    "judul": "Menjadi pendatang baru yang langsung tembus 3 besar sunscreen bayi Shopee",
+    "tanggal": "Q1 2026",
+    "ringkasan": "Loluna naik ke posisi #3 kategori sunscreen bayi di Shopee dengan pangsa 4,85%, menggeser Beeme, hanya beberapa bulan setelah masuk pasar.",
+    "kandungan": ["5x Ceramide", "Niacinamide"],
+    "alasanViral": "Konten UGC organik ibu-ibu yang 'kaget' dengan ukuran botol 200ml hanya di kisaran Rp60.000 — value-for-money jadi hook utama, bukan endorsement selebriti",
+    "sumber": "GoodStats Data (Compas)"
+  },
+  {
+    "id": "news-4",
+    "brand": "Skintific (referensi tren lintas kategori)",
+    "judul": "Luncurkan 5% B5 Ceramide Barrier Relief Moisturizer",
+    "tanggal": "3 Maret 2026",
+    "ringkasan": "Meski bukan brand khusus bayi, peluncuran ini menegaskan tren besar 'barrier repair' dengan kombinasi Panthenol (B5) 5%, 5x Ceramide, Hyaluronic Acid, dan Centella Asiatica — kombinasi kandungan yang sama juga mulai banyak diadaptasi brand skincare bayi.",
+    "kandungan": ["5% Panthenol (B5)", "5x Ceramide", "Hyaluronic Acid", "Centella Asiatica"],
+    "alasanViral": "Positioning 'terinspirasi klinis' dan klaim meredakan kemerahan instan sekaligus memperkuat barrier jangka panjang — pola klaim yang sama mulai dipakai kompetitor skincare bayi",
+    "sumber": "Laras Post"
+  },
+  {
+    "id": "news-5",
+    "brand": "Moell",
+    "judul": "Sunscreen tetap dominan >44% pangsa pasar Shopee di tengah pendatang baru",
+    "tanggal": "Q1 2026",
+    "ringkasan": "Meski ada pendatang baru seperti Loluna, Moell mempertahankan posisi puncak kategori sunscreen bayi Shopee dengan pangsa 44,21% — jauh di atas Purela di posisi dua (7,13%).",
+    "kandungan": ["Physical Mineral Sunscreen (Zinc Oxide)", "Organic Avocado Oil"],
+    "alasanViral": "Kombinasi endorsement selebriti kids jangka panjang (Cipung, Ameena, Levian) dan klaim 'direkomendasikan AAP & IDAI' membangun kepercayaan yang sulit ditandingi brand baru",
+    "sumber": "GoodStats Data (Compas)"
+  }
+]
