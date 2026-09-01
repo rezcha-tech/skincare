@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BabyCare Market Insight — Analisa Pasar Skincare Bayi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🍼 BabyCare <span>Market Insight</span></div>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="overview">Ringkasan</button>
+      <button class="tab-btn" data-tab="competitors">Kompetitor</button>
+      <button class="tab-btn" data-tab="products">Produk Kami</button>
+      <button class="tab-btn" data-tab="notes">Catatan Riset</button>
+      <button class="tab-btn" data-tab="news">Berita &amp; Tren</button>
+      <button class="tab-btn" data-tab="ai">Analisa AI</button>
+    </nav>
+  </header>
 
+  <main>
+    <!-- RINGKASAN -->
+    <section id="overview" class="tab-panel active">
+      <h1>Ringkasan Pasar</h1>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-competitors">0</div>
+          <div class="stat-label">Kompetitor tercatat</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-products">0</div>
+          <div class="stat-label">Produk kami dalam riset</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-notes">0</div>
+          <div class="stat-label">Catatan riset</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-news">0</div>
+          <div class="stat-label">Berita &amp; tren tercatat</div>
+        </div>
+      </div>
+      <p class="hint">
+        Gunakan tab <strong>Kompetitor</strong>, <strong>Produk Kami</strong>, dan <strong>Catatan Riset</strong>
+        untuk menambahkan bahan riset kamu. Semua data ini otomatis dipakai sebagai konteks saat kamu bertanya
+        di tab <strong>Analisa AI</strong>.
+      </p>
+
+      <div id="market-overview"></div>
+    </section>
+
+    <!-- KOMPETITOR -->
+    <section id="competitors" class="tab-panel">
+      <div class="section-head">
+        <h1>Kompetitor</h1>
+        <button class="btn-primary" onclick="openForm('competitors')">+ Tambah Kompetitor</button>
+      </div>
+      <div id="competitors-list" class="card-list"></div>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="products" class="tab-panel">
+      <div class="section-head">
+        <h1>Produk Kami (Riset)</h1>
+        <button class="btn-primary" onclick="openForm('products')">+ Tambah Produk</button>
+      </div>
+      <div id="products-list" class="card-list"></div>
+    </section>
+
+    <!-- CATATAN RISET -->
+    <section id="notes" class="tab-panel">
+      <div class="section-head">
+        <h1>Catatan Riset</h1>
+        <button class="btn-primary" onclick="openForm('notes')">+ Tambah Catatan</button>
+      </div>
+      <div id="notes-list" class="card-list"></div>
+    </section>
+
+    <!-- BERITA & TREN -->
+    <section id="news" class="tab-panel">
+      <div class="section-head">
+        <h1>Berita &amp; Tren Kompetitor</h1>
+        <button class="btn-primary" onclick="openForm('news')">+ Tambah Berita</button>
+      </div>
+      <p class="hint">
+        Catatan launching produk baru, kandungan yang dipakai, dan alasan viral dari kompetitor.
+        Klik "Cari Berita Terbaru" untuk mencari update terkini secara langsung lewat AI + pencarian web.
+      </p>
+      <div class="ai-box" style="margin: 14px 0;">
+        <input type="text" id="news-search-input" placeholder="Nama brand atau topik (kosongkan untuk umum)" />
+        <button class="btn-primary" onclick="searchLiveNews()">🔍 Cari Berita Terbaru (AI + Web Search)</button>
+      </div>
+      <div id="news-live-result" class="ai-answer" style="display:none;"></div>
+      <div id="news-list" class="card-list"></div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="tab-panel">
+      <h1>Analisa AI</h1>
+      <p class="hint">
+        Tanyakan apa saja tentang posisi brand kamu dibanding kompetitor, peluang produk baru,
+        strategi harga, dsb. AI akan menjawab berdasarkan seluruh data yang sudah kamu masukkan
+        (kompetitor, produk kami, catatan riset, berita &amp; tren, ringkasan pasar).
+      </p>
+      <div class="ai-box">
+        <textarea id="ai-question" placeholder="Contoh: Bagaimana posisi harga produk krim iritasi kami dibanding Mustela? Apa peluangnya?"></textarea>
+        <button class="btn-primary" onclick="askAI()">Tanya AI</button>
+      </div>
+      <div id="ai-answer" class="ai-answer"></div>
+    </section>
+  </main>
+
+  <!-- MODAL FORM -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal">
+      <h2 id="modal-title">Tambah Data</h2>
+      <form id="modal-form"></form>
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeForm()">Batal</button>
+        <button class="btn-primary" onclick="submitForm()">Simpan</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
